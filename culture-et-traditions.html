@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anyama - Culture et Traditions</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #1a252f;
+            --gold: #f1c40f;
+            --light-blue:#3498db;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('anyama-culture-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .sommaire {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .sommaire h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .sommaire ul {
+            columns: 2;
+            padding-left: 20px;
+        }
+        
+        .sommaire li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .section {
+            margin: 3rem 0;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--light-blue);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .photo-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .photo-gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .sommaire ul {
+                columns: 1;
+            }
+            
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+        }
+.hero {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+  .hero-content::before {
+           content: "";
+           background-image: url('anyama culture et tradition.jpg');
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+           opacity: 1;
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           z-index: -1;
+       }
+.dotana{
+  color:#ffffff;
+}
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="dotana">Anyama - Culture et Traditions</h1>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="sommaire">
+            <h2>SOMMAIRE</h2>
+            <ul>
+                <li><strong>CULTURE</strong>
+                    <ul>
+                        <li>Histoire D'Anyama</li>
+                        <li>Rôle de la Religion</li>
+                    </ul>
+                </li>
+                <li><strong>TRADITION</strong>
+                    <ul>
+                        <li>Les différents peuples</li>
+                        <li>Les rituels</li>
+                        <li>Les immersions</li>
+                        <li>Les cérémonies</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <section class="section">
+            <h2>CULTURE</h2>
+            
+            <article>
+                <h3>Histoire D'Anyama</h3>
+                <div class="grid-2">
+                    <div>
+                        <h4>DÉFINITION</h4>
+                        <p>Le mot Anyama est un dérivé du mot « Gnan », un groupe d'autochtones (sous-groupe Attié) qui furent les premiers à occuper l'actuel Anyama.</p>
+                        <p>Anyama a été érigée en 1985 en commune. Elle fut dirigée par le maire M. Coffi Michel de 1985 à 1995. A sa suite se sont succédé plusieurs maires dont l'actuel est Madame Fatim Bamba élu en 2023.</p>
+                    </div>
+                    <div>
+                        <h4>VILLAGES ET QUARTIERS</h4>
+                        <p>Elle comporte plusieurs quartiers dont les principaux sont : Michelbougou, Anyama gare, Palmeraie, Zossonkoi, Résidentiel, Schneider, Belle-ville, quartier Sylla, quartiers Ran et Ran Extension, quartiers CGE et CGE extension, Christiankoi (I et II).</p>
+                    </div>
+                </div>
+                
+                <div class="highlight">
+                    <p>La ville actuelle d'Anyama est née avec l'implantation du chemin de fer en 1905 où, autour de la gare d'Anyama, s'était installée une petite communauté dioula dominée par les Malinké d'Odienné.</p>
+                </div>
+                
+                <p>En 1958, Anyama compte 3000 habitants et est surtout connue comme le principal centre colatier du pays. Les Odienneka affluent dans la petite ville, pour la collecte de cola et le stockage dans des magasins de cola ou "Woro Böo" afin de les commercialiser dans le Nord.</p>
+                
+                <h4>LES DIFFERENTS VILLAGES DE LA COMMUNE</h4>
+                <p>A Anyama nous comptons plusieurs villages : Attingué, Akoupé-Zeudji, Anyama-Adjamé, Ebimpé, Allokoi mais aussi Adonkoi et Anyama Ahouabo.</p>
+            </article>
+            
+            <article>
+                <h3>Rôle de la Religion</h3>
+                <p>En Côte d'Ivoire, la religion joue un rôle important dans la vie sociale et culturelle, et cela se reflète également à Anyama, habitée principalement par le peuple Attié, dont la culture est imprégnée de traditions et de croyances.</p>
+                <p>La religion, qu'elle soit animiste, chrétienne ou musulmane, influence les pratiques quotidiennes, les rituels et les relations sociales des habitants d'Anyama.</p>
+                <div class="highlight">
+                    <p>La religion à Anyama est un élément dynamique qui façonne la vie des habitants à travers ses diverses expressions et ses interactions avec la culture locale.</p>
+                </div>
+            </article>
+        </section>
+        
+        <section class="section">
+            <h2>TRADITION</h2>
+            
+            <article>
+                <h3>Les différents peuples de la commune</h3>
+                <p>Les Attié font partie du groupe Akan et sont parmi les populations les plus anciennes d'Anyama. De plus, la ville a connu une forte immigration de diverses origines, notamment burkinabè, malienne, togolaise, béninoise et ghanéenne, surtout dans le quartier d'Anyama Débarcadère, lui conférant un caractère cosmopolite.</p>
+                <p>Le peuple Attié est divisé en plusieurs cantons dont Anyama.</p>
+                <div class="highlight">
+                    <p>Ce quartier, connu pour son ancien débarcadère, a vu l'arrivée massive de personnes venues travailler dans le secteur du bois, contribuant à faire d'Anyama Débarcadère un village cosmopolite.</p>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Rituel Traditionnel</h3>
+                <p>A Anyama les rituels traditionnels sont liés aux fêtes de génération.</p>
+                <p>Ces cérémonies marquent l'accession d'une génération au pouvoir coutumier et impliquent plusieurs étapes, dont la remise d'un drapeau symbolique et une cérémonie de consécration.</p>
+                <p>Les générations se succèdent selon un ordre établi : les Bléchoué précèdent les Gnando, puis les Djougbo, et enfin les Mouna.</p>
+                <div class="highlight">
+                    <p>La fête de génération est perçue comme une occasion de renforcer les liens entre les différentes communautés.</p>
+                </div>
+            </article>
+            
+            <article>
+                <h3>Les immersions</h3>
+                <div class="photo-gallery">
+                    <img src="ceremonie-d-immersion-a-anyama.jpeg" alt="Cérémonie d'immersion à Anyama">
+                    <img src="rituel-traditionnel.jpg" alt="Rituel traditionnel">
+                    <img src="participant.jpg" alt="Participants à la cérémonie">
+                </div>
+            </article>
+            
+            <article>
+                <h3>Cérémonies</h3>
+                <div class="photo-gallery">
+                    <img src="ceremonie-traditionnel.jpg" alt="Cérémonie traditionnelle">
+                    <img src="danse-rituel.jpg" alt="Danse rituelle">
+                    <img src="costume.jpg" alt="Costumes traditionnels">
+                </div>
+            </article>
+              <footer>
+        <p>© 2025 - Site sur Anyama | Tous droits réservés</p>
+    </footer>
+        </section>
+    </div>
+</body>
+</html>
